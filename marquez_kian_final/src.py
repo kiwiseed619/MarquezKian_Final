@@ -8,15 +8,11 @@ def file_exists(filename):
 def main():
     filename = input("What would you like to name your planner file? (exclude file extension) ")
     exists = file_exists(filename)
-    if exists == True:
-        user_ans = input("A file with this name already exists, would you like to continue? (y/n) ")
-        if user_ans.lower == ("y") or ("yes"):
-            pass
-        if user_ans.lower == ("n") or ("no"):
-            new_filename = input("What would you like to rename your planner file? (exclude file extension) ")
-            file_exists(new_filename)
-    if exists == False:
-        pass
+    while exists == True:
+        filename = input("A file with this name already exists. what would you like to rename your planner? (exclude file extension) ")
+        exists = file_exists(filename)
+    with open(f"{filename}.txt", "w") as planner:
+        print("next")
 
 
 
