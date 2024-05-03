@@ -50,7 +50,7 @@ def write(filename, month):
             else:
                 file.write(f"{notes}\n\n")
             answer = ()
-            answer = input("Add another item? (y/n) ")
+            answer = input("\nAdd another item? (y/n) ")
             if answer.lower() == ("y") or answer.lower() == ("y"):
                 pass
             elif answer.lower() == ("n") or answer.lower() == ("n"):
