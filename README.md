@@ -13,9 +13,8 @@ While I should have the necessary coding knowledge to make this program, I will 
 The ideal outcome for this program would be for the program to produce a calendar like schedule, with months, years, specific times, a description of the important dates inputted, and additional notes for each, in chronological. A minimal outcome would show at least a readable list of important dates to the user, even if they aren't chronological.
 
 ## Milestones
-- Implement main function. User input section.
-- Implement .txt file creating function.
-- Implement write function. 
-- Implement formatting function.
+- Implement main function.
+- Implement .txt file creating function and editing.
+- Correct file formatting.
 - Implement save function.
 - Complete program.
