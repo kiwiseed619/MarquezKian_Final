@@ -1,7 +1,6 @@
 import os
 
 
-
 def file_exists(filename):
     exists = os.path.isfile(f"{filename}.txt")
     return exists
@@ -38,13 +37,13 @@ def write(filename, month):
             if date == ("") and title == ("") and start_time == ("") and end_time == (""):
                 pass
             elif start_time == ("") and end_time == (""):
-                file.write(f"{month}, {date}\n{title}\n")
+                file.write(f"{month} {date}\n{title}\n")
             elif start_time == (""):
-                file.write(f"{month}, {date}\n{title}\n{end_time}\n")
+                file.write(f"{month} {date}\n{title}\n{end_time}\n")
             elif end_time == (""):
-                file.write(f"{month}, {date}\n{title}\n{start_time}\n")
+                file.write(f"{month} {date}\n{title}\n{start_time}\n")
             else:
-                file.write(f"{month}, {date}\n{title}\n{start_time} - {end_time}\n")
+                file.write(f"{month} {date}\n{title}\n{start_time} - {end_time}\n")
             if notes == (""):
                 file.write("\n\n")
             else:
